@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  body{
+  font-family: Titillium Web;
+  font-size: $ff-body;
+  line-height: 1em;
+  background-color: $white;
+  }
+button{
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+  
+input{
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  &[type="submit"]{
+    cursor: pointer;
+  }
+
+  &::placeholder{
+    font-size: .85rem;
+    font-family: $ff;
+    font-weight: $ff-light;
+    letter-spacing: .1rem;
+    color: $gray;
+  }
+}
