@@ -360,6 +360,24 @@ flex-direction: row-reverse;
     text-align: center;
     margin-top: 25px;
   }
+  .links-wrapper{
+    width: 160px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .links-list{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .small{
+    width: 140px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 10px;
+    
+  }
 }
 @media only screen and(max-width:600px){
   .container{

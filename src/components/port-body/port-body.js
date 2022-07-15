@@ -88,7 +88,7 @@ const PortBody=()=>{
             <li className="links-item"><a href="https://github.com/sherzodxon" className="links-link github"></a></li>
             <li className="links-item"><a href="https://www.linkedin.com/in/sherzodxon-yarmatxonov-14019a242/" className="links-link linkedin"></a></li>
           </ul>
-          <small>COPYRIGHT SHERZODXON 2022</small>
+          <small className='small'>COPYRIGHT SHERZODXON 2022</small>
         </div>
         </div>
       </footer>

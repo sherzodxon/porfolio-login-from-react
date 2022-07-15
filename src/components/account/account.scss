@@ -7,7 +7,6 @@
 }
 .account-wrapper{
   width: 100%;
-  padding: 5px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -314,43 +313,44 @@
     height: calc(100vh - 10rem);
   }
   .menu-section{
-    height: calc(100vh - 20rem);
+    height: calc(100vh - 11rem);
   }
 }
 @media only screen and(max-width:700px){
   .menu-title {
-    width: 700px;
+    width: 600px;
     
-    padding-left: calc(50% - 350px);
+    padding-left: calc(50% - 300px);
   }
   
 }
 @media only screen and(max-width:650px){
   .menu-title {
-    width: 650px;
-    padding-left: calc(50% - 325px);
+    width: 550px;
+    padding-left: calc(50% - 225px);
   }
 }
 @media only screen and(max-width:600px){
   .menu-title {
-    width: 600px;
+    width: 500px;
    
-    padding-left: calc(50% - 300px);
+    padding-left: calc(50% - 240px);
   }
 }
 @media only screen and(max-width:550px){
   .menu-title {
-    width: 550px;
-    
-    padding-left: calc(50% - 275px);
+    width: 450px;
+    line-height: 20px;
+    padding-left: calc(50% - 215px);
   }
 }
 @media only screen and(max-width:500px){
   .menu-title {
-    padding-top: 115px;
-    width: 500px;
+    padding-top: 85px;
+    width: 400px;
    font-size: 1.2rem;
-    padding-left: calc(50% - 250px);
+    padding-left: calc(50% - 190px);
+    line-height: 20px;
   }
   .button-label {
     font-size: 20px;
@@ -360,7 +360,7 @@
     margin-left: 2rem;
   }
   .menu-section{
-    height: calc(100vh - 29rem);
+    height: calc(100vh - 12rem);
   }
   .menu .burger-item {
     line-height: 1.5rem;
@@ -371,12 +371,20 @@
     text-indent: -3rem;
     transition: 1s cubic-bezier(1, .1, .5, 1.1);
   }
+  .container{
+    padding: 0;
+  }
+  .footer__container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 @media only screen and(max-width:450px){
   .menu-title {
-    width: 450px;
+    width: 350px;
     font-size: 1rem;
-    padding-left: calc(50% - 225px);
+    padding-left: calc(50% - 145px);
+    line-height: 20px;
   }
   .burger-item {
     text-decoration: none;
@@ -390,35 +398,44 @@
 }
 @media only screen and(max-width:420px){
   .menu-title {
-    width: 420px;
-    padding-left: calc(50% - 210px);
+    width: 320px;
+    padding-left: calc(50% - 140px);
   }
 }
 @media only screen and(max-width:400px){
   .menu-title {
-    width: 400px;
+    width: 300px;
   
-    padding-left: calc(50% - 200px);
-  }
-}
-@media only screen and(max-width:350px){
-  .menu-title {
-    width: 350px;
-    font-size: 1rem;
-    padding-left: calc(50% - 175px);
+    padding-left: calc(50% - 130px);
   }
 }
 @media only screen and(max-width:300px){
   .menu-title {
-    width: 300px;
+    width: 200px;
     font-size: 1rem;
-    padding-left: calc(50% - 150px);
+    padding-left: calc(50% - 70px);
+    line-height: 20px;
+  }
+  .menu-section{
+    height: calc(100vh - 5rem);
+  }
+  
+  .footer__container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and(max-width:200px){
+  .menu-title {
+    width: 100px;
+    font-size: 1rem;
+    padding-left: calc(50% - 50px);
   }
 }
 @media only screen and(max-width:280px){
   .menu-title {
-    width: 280px;
+    width: 80px;
     font-size: 0.8rem;
-    padding-left: calc(50% - 140px);
+    padding-left: calc(50% - 40px);
   }
 }
