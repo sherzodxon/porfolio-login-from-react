@@ -39,3 +39,32 @@
         transform: translate3d(0, 0, 0);
     }
 }
+@media only screen and(max-width:800px){
+    @keyframes bounceLeft{
+        0% {
+            transform: translate3d(0, 100%, 0)
+        }
+    
+        50% {
+            transform: translate3d(0, -80%, 0)
+        }
+    
+        100% {
+            transform: translate3d(0, -80%, 0)
+        }
+        
+    }
+    @keyframes bounceRight {
+        0% {
+            transform: translate3d(0, -50%, 0)
+        }
+    
+        50% {
+            transform: translate3d(0, -10%, 0)
+        }
+    
+        100% {
+            transform: translate3d(0, -10%, 0)
+        }
+    }
+}

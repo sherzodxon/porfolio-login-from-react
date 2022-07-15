@@ -5,7 +5,7 @@
 
 .user-close {
     display: none;
-        
+
 }
 
 .user {
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
 
     &_options-container {
@@ -76,14 +76,12 @@
     position: absolute;
     top: 50%;
     left: 30px;
-
     width: calc(50% - 30px);
-    min-height: 420px;
+    min-height: 400px;
     background-color: $white;
     border-radius: $bdrds;
     box-shadow: 2px 0 15px rgba($black, .25);
     overflow: hidden;
-
     transform: translate3d(100%, -50%, 0);
     transition: transform .4s ease-in-out;
 }
@@ -94,6 +92,7 @@
 
 .forms {
     &_title {
+        margin-top: -20px;
         margin-bottom: 45px;
         font-size: 1.5rem;
         font-weight: $ff-medium;
@@ -104,26 +103,23 @@
         letter-spacing: .1rem;
     }
 
-    &_field {
-        &:not(:last-of-type) {
-            margin-bottom: 20px
-        }
-    }
-
     &_field-input {
         width: 100%;
         border-bottom: 1px solid $gray;
-        padding: 6px 20px 6px 6px;
-
+        padding: 6px ;
+        padding-bottom: 3px;
         font-family: $ff;
         font-size: 1rem;
         font-weight: $ff-light;
         color: darken($gray, 30%);
         letter-spacing: .1rem;
         transition: border-color .2s ease-in-out;
+        &::placeholder{
+            font-size: 1em;
+        }
 
         &:focus {
-            border-color: darken($gray, 30%)
+            border-color: darken($gray, 30%);
         }
     }
 
@@ -131,17 +127,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         margin-top: 35px;
-
         &-forgot {
             font-family: $ff;
             letter-spacing: .1rem;
             color: $gray;
             text-decoration: underline;
-
             transition: color .2s ease-in-out;
-
             &:hover {
                 color: darken($gray, 10%)
             }
@@ -151,21 +143,21 @@
             background-color: $salmon;
             border-radius: $bdrds;
             padding: 10px 35px;
-
             font-size: 1rem;
             font-family: $ff;
             font-weight: $ff-light;
             color: $white;
             text-transform: uppercase;
             letter-spacing: .1rem;
-
             transition: background-color .2s ease-in-out;
-
             &:hover {
                 background-color: darken($salmon, 10%)
             }
         }
     }
+}
+.forms_fieldset{
+    border: none;
 }
 
 .user_forms-signup,
@@ -173,9 +165,7 @@
     position: absolute;
     top: 70px;
     left: 40px;
-
     width: calc(100% - 80px);
-
     opacity: 0;
     visibility: hidden;
     transition: opacity .4s ease-in-out, visibility .4s ease-in-out, transform .5s ease-in-out
@@ -283,4 +273,185 @@
 
 .entrance-link--active {
     display: block;
+}
+
+@media only screen and(max-width:800px) {
+    .forms_buttons-action {
+        padding: 7px 9px;
+    }
+
+    .forms_buttons-forgot {
+        font-size: 0.5em;
+        margin: 0;
+    }
+
+    .forms_field-input {
+        font-size: 15px;
+        font-family: Poppins;
+    }
+
+    .user_options-text {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .user_unregistered-title{
+        padding-top: 10px;
+    }
+
+    .user_registered-title,
+    .user_unregistered-title,
+    .user_unregistered-text,
+    .user_registered-text {
+        width: 300px;
+    }
+    
+
+    .user_unregistered-signup {
+        padding: 6px 15px;
+        font-size: 15px;
+       margin-top: 15px;
+
+    }
+    .user_options-unregistered {
+        padding: 30px;
+        padding-bottom: 20px;
+        padding-top: 250px;
+    }
+    .user_options-registered{
+        padding-bottom: 240px;
+    }
+
+    .user_registered-login {
+        padding: 6px 15px;
+        font-size: 15px;
+    }
+    .user_forms-login{
+        padding: -30px;
+    }
+
+    .user_options-forms {
+        right: 30px;
+        width: calc(100% - 60px);
+        min-height: 270px;
+        background-color: $white;
+        border-radius: $bdrds;
+        box-shadow: 2px 0 15px rgba($black, .25);
+        overflow: hidden;
+        transform: translate3d(100%, -50%, 0);
+        transition: transform .4s ease-in-out;
+    }
+
+    .forms_buttons {
+        margin: 10px;
+    }
+
+    .user_options-container {
+        width: 100%;
+    }
+
+    .forms_title {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    .forms_buttons-action {
+        font-size: 16px;
+        
+    }
+}
+
+@media only screen and(max-width:450px) {
+
+    .user_registered-title,
+    .user_unregistered-title {
+        font-size: 24px;
+        width: 200px;
+        padding-top: 20px;
+    }
+
+    .user_unregistered-text,
+    .user_registered-text {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .user_unregistered-signup {
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .user_registered-login {
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .user_options-unregistered {
+        padding: 30px;
+        padding-bottom: 20px;
+        padding-top: 250px;
+    }
+    .user_options-registered{
+        padding-bottom: 240px;
+    }
+    .forms_title{
+        font-size: 20px;
+    }
+    .forms_buttons-action{
+        font-size: 10px;
+    }
+    .forms_field-input{
+        font-size: 10px;
+    }
+    
+}
+@media only screen and(max-width:450px){
+    .user_unregistered-signup {
+        margin-top: 15px;
+        font-size: 9px;
+        padding: 4px 7px;
+        margin-bottom: 5px;
+    }
+
+    .user_registered-login {
+        margin-top: 20px;
+        font-size: 9px;
+        padding: 4px 7px;
+    }
+}
+@media only screen and(max-width:300px){
+    .user_unregistered-signup {
+        margin-top: 15px;
+        font-size: 7px;
+        padding: 4px 7px;
+        margin-bottom: 5px;
+    }
+
+    .user_registered-login {
+        margin-top: 20px;
+        font-size: 7px;
+        padding: 4px 7px;
+    }
+}
+@media only screen and(max-height:850px){
+    .user_options-unregistered {
+        padding: 30px;
+        padding-bottom: 20px;
+        padding-top: 220px;
+    }
+    .user_options-registered{
+        padding-bottom: 220px;
+    }
+}
+@media only screen and(max-height:800px){
+    .user_options-unregistered {
+        padding: 30px;
+        padding-bottom: 20px;
+        padding-top: 160px;
+    }
+    .user_options-registered{
+        padding-bottom: 160px;
+    }
 }

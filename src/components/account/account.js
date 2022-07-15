@@ -20,7 +20,7 @@ const Account=({useData,className,loader})=>{
             <div className={loader?"account-wrapper--close":"account-wrapper"}>
              
              <input className='hide' type='checkbox' id='for_menu' />
-             <label htmlFor='for_menu'>Menu</label>
+             <label className="button-label" htmlFor='for_menu'>Menu</label>
             <section className="menu-section">
             <h2 className="menu-title">WELCOME {`${name}`}</h2>
             </section>
@@ -31,7 +31,7 @@ const Account=({useData,className,loader})=>{
               <li className="burger-item">Porfolio</li>
               <li className="burger-item last-item">
                   <div className="burger-wrapper">
-                      <p className="burger-name"><span className="burger-span">Your-name:</span>{name}</p>
+                      <p className="burger-name">{name}</p>
                       <p className="burger-number"><span className="burger-span">Your-number</span>{phone_number}</p>
                       <a href={`https://${email}`} className="burger-email">{email}</a>
                   </div>

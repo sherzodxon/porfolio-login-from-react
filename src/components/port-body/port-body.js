@@ -24,6 +24,7 @@ const PortBody=()=>{
           </div>
         </div>
         <div  className="projects-wrapper wrapper-left text-wrapper-two">
+        <div className="project-img img-two"></div>
             <div className="project-text-wrapper ">
               <h3 className="project-title">Project Two</h3>
               <p className="project-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -33,7 +34,7 @@ const PortBody=()=>{
                   Live</a>
               <a className="body-button" target="_blank" href="https://github.com/sherzodxon">See Code</a>
             </div>
-            <div className="project-img img-two"></div>
+            
         </div>
         <div className="projects-wrapper wrapper-right">
             <div className="project-img img-three"></div>     

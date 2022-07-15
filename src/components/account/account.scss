@@ -1,248 +1,424 @@
 .account-close {
-    display: none;
+  display: none;
 }
-.account-wrapper--close{
-display: none;
+
+.account-wrapper--close {
+  display: none;
+}
+.account-wrapper{
+  width: 100%;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .gooey {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 142px;
-    height: 40px;
-    margin: -20px 0 0 -71px;
-    background: white;
-    filter: contrast(20);
-    border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: white;
+  filter: contrast(20);
+  border-radius: 10px;
 }
+
 .gooey--close {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 142px;
-    height: 40px;
-    margin: -20px 0 0 -71px;
-    background: transparent;
-    filter: contrast(20);
-    border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: transparent;
+  filter: contrast(20);
+  border-radius: 10px;
 }
 
 .dot {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 12px;
-    left: 15px;
-    ;
-    filter: blur(6px);
-    background: #000;
-    border-radius: 50%;
-    transform: translateX(0);
-    animation: dot 2s infinite;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  ;
+  filter: blur(6px);
+  background: #000;
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: dot 2s infinite;
 }
 
 .dots {
-    transform: translateX(0);
-    margin-top: 12px;
-    margin-left: 31px;
-    animation: dots 2s infinite;
-    ;
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: dots 2s infinite;
+  ;
 
 }
 
 .loader-span {
-    display: block;
-    float: left;
-    width: 16px;
-    height: 16px;
-    margin-left: 16px;
-    filter: blur(4px);
-    background: #000;
-    border-radius: 50%;
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
 }
 
 
 @keyframes dot {
-    50% {
-        transform: translateX(96px)
-    }
+  50% {
+    transform: translateX(96px)
+  }
 }
 
 @keyframes dots {
-    50% {
-        transform: translateX(-31px)
-    }
+  50% {
+    transform: translateX(-31px)
+  }
 
 }
-  .menu {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    height: 300px;
-    overflow: hidden;
-    transition: width .4s;
-    z-index: 2;
-  }
-  .menu ul {
-    list-style-type: none;
-  }
-  .menu .burger-item {
-    line-height: 2.3rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: rgb(17, 15, 15);
-    letter-spacing: -30rem;
-    text-indent: -3rem;
-    transition: 1s cubic-bezier(1,.1,.5,1.1);
-  }
-  .hide {
-    display: none;
-  }
-  label {
-    font-size: 35px;
-    line-height: 3rem;
-    color: orangered;
-    cursor: pointer;
-    margin-left: 3.8rem;
-  }
-  
-  #for_menu:checked ~ nav li {
-    text-indent: 3rem;
-    letter-spacing: .1rem;
-    transition-timing-function: cubic-bezier(.8,-.9,.1,1.2);
-  }
-  .burger-item:nth-child(6) {
-    transition-delay:0s
-  }
-  .burger-item:nth-child(5) {
-    transition-delay:.4s
-  }
-  .burger-item:nth-child(4) {
-    transition-delay:.8s
-  }
-  .burger-item:nth-child(3) {
-    transition-delay:1.2s
-  }
-  .burger-item:nth-child(2) {
-    transition-delay:1.6s
-  }
-  .burger-item:nth-child(1) {
-    transition-delay:2s
-  }
-  
-  
-  #for_menu:checked ~ nav li:nth-child(1) {
-    transition-delay:0s
-  }
-  #for_menu:checked ~ nav li:nth-child(2) {
-    transition-delay:.4s
-  }
-  #for_menu:checked ~ nav li:nth-child(3) {
-    transition-delay:.8s
-  }
-  #for_menu:checked ~ nav li:nth-child(4) {
-    transition-delay:1.2s;
 
-  }
-  #for_menu:checked ~ nav li:nth-child(5) {
-    transition-delay:1.6s
-  }
-  #for_menu:checked ~ nav li:nth-child(6) {
-    transition-delay:2s
-  }
-  
-  
-  .menu-section {
-    background: url(https://phonoteka.org/uploads/posts/2021-05/1621005462_23-phonoteka_org-p-fon-dlya-saita-veb-studii-25.jpg) no-repeat center bottom;
-    background-size: cover;
-    height: calc(100vh - 3rem);
-    transition: .4s linear 2s;
-    padding-top: 100px;
-    z-index: 80;
-  }
-  #for_menu:checked ~ section {
-    transform: translateX(20rem);
-    transition-delay: 0s;
-    opacity: .5;
-  }
-  .burger-item {
-    width: 400px;
-	text-decoration: none;
-	padding: 5px 20px;
-	font-size: 2em;
-	position: relative;
-    cursor: pointer;
+.menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  height: 300px;
+  overflow: hidden;
+  transition: width .4s;
+  z-index: 2;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu .burger-item {
+  line-height: 2.3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(17, 15, 15);
+  letter-spacing: -30rem;
+  text-indent: -3rem;
+  transition: 1s cubic-bezier(1, .1, .5, 1.1);
+}
+
+.hide {
+  display: none;
+}
+
+.button-label {
+  font-size: 35px;
+  line-height: 3rem;
+  color: orangered;
+  cursor: pointer;
+  margin-left: 3.8rem;
+}
+
+#for_menu:checked~nav li {
+  text-indent: 3rem;
+  letter-spacing: .1rem;
+  transition-timing-function: cubic-bezier(.8, -.9, .1, 1.2);
+}
+
+.burger-item:nth-child(6) {
+  transition-delay: 0s
+}
+
+.burger-item:nth-child(5) {
+  transition-delay: .4s
+}
+
+.burger-item:nth-child(4) {
+  transition-delay: .8s
+}
+
+.burger-item:nth-child(3) {
+  transition-delay: 1.2s
+}
+
+.burger-item:nth-child(2) {
+  transition-delay: 1.6s
+}
+
+.burger-item:nth-child(1) {
+  transition-delay: 2s
+}
+
+
+#for_menu:checked~nav li:nth-child(1) {
+  transition-delay: 0s
+}
+
+#for_menu:checked~nav li:nth-child(2) {
+  transition-delay: .4s
+}
+
+#for_menu:checked~nav li:nth-child(3) {
+  transition-delay: .8s
+}
+
+#for_menu:checked~nav li:nth-child(4) {
+  transition-delay: 1.2s;
 
 }
-.last-item{
+
+#for_menu:checked~nav li:nth-child(5) {
+  transition-delay: 1.6s
+}
+
+#for_menu:checked~nav li:nth-child(6) {
+  transition-delay: 2s
+}
+
+
+.menu-section {
+  background: url(https://phonoteka.org/uploads/posts/2021-05/1621005462_23-phonoteka_org-p-fon-dlya-saita-veb-studii-25.jpg) no-repeat center bottom;
+  background-size: cover;
+  height: calc(100vh - 8rem);
+  transition: .4s linear 2s;
+  padding-top: 100px;
+  z-index: 80;
+}
+
+#for_menu:checked~section {
+  transform: translateX(20rem);
+  transition-delay: 0s;
+  opacity: .5;
+}
+
+.burger-item {
+  width: 400px;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 2em;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.last-item {
   cursor: auto;
   text-align: left;
-  
-  
+
+
 }
-.burger-name{
+
+.burger-name {
   font-size: 0.5em;
   font-family: 'Poppins';
-     font-style: italic;
-     text-align: left;
-     line-height: 2em;
+  font-style: italic;
+  text-align: left;
+  line-height: 2em;
 }
-.burger-number{
+
+.burger-number {
   font-size: 0.5em;
   line-height: 0.7em;
 }
-.burger-email{
+
+.burger-email {
   font-size: 0.4em;
   text-align: center;
   padding-left: 60px;
   z-index: -3;
   line-height: 0.1em;
-  &:hover{
+
+  &:hover {
     color: orangered;
   }
 }
 
-.burger-span{
+.burger-span {
   font-size: 0.6em;
   color: orange;
   font-family: 'Poppins';
-     font-style: italic;
+  font-style: italic;
 }
-.last-item::before{
+
+.last-item::before {
   display: none;
 }
-.last-item:hover:before{
+
+.last-item:hover:before {
   width: 0;
 }
 
 
-  .burger-item:before{
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 33%;
-	background-color: rgb(37, 32, 32);
-	height: 3px;
-	width: 0px;
-	transform: translateX(-50%);
-	transition: all 0.3s linear;
+.burger-item:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  background-color: rgb(37, 32, 32);
+  height: 3px;
+  width: 0px;
+  transform: translateX(-50%);
+  transition: all 0.3s linear;
 
 }
-.burger-item:hover:before{
-	width: 40%;
+
+.burger-item:hover:before {
+  width: 40%;
 }
-.menu-title{
-    color: white;
-    display: block;
-    text-transform: uppercase;
-    width: 1320px;
-    padding-top: 170px;
-    padding-left:calc(50% - 660px);
-   text-align: center;
-    font-size: 2.5rem;
-    animation: bounceLeft 1.5s forwards;
+
+.menu-title {
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  width: 1320px;
+  padding-top: 170px;
+  padding-left: calc(50% - 660px);
+  text-align: center;
+  font-size: 2.5rem;
+  animation: bounceLeft 1.5s forwards;
+
+}
+@media only screen and(max-width:1000px){
+  .menu-title {
+    width: 1000px;
+    font-size: 1.7rem;
+    padding-left: calc(50% - 500px);
+  }
+}
+@media only screen and(max-width:800px){
+  .button-label {
+    font-size: 30px;
+    line-height: 3.5rem;
+    color: orangered;
+    cursor: pointer;
+    margin-left: 3.8rem;
+    padding: 10px;
+  }
+  .burger-item {
+    width: 300px;
+    text-decoration: none;
+    padding: 5px ;
+    font-size: 1.5em;
+    position: relative;
+    cursor: pointer;
+  
+  }
+  .menu-title {
+    padding-top: 140px;
+    width: 800px;
+    font-size: 1.3rem;
+    padding-left: calc(50% - 400px);
+  }
+  .menu-section{
+    height: calc(100vh - 10rem);
+  }
+  .menu-section{
+    height: calc(100vh - 20rem);
+  }
+}
+@media only screen and(max-width:700px){
+  .menu-title {
+    width: 700px;
     
+    padding-left: calc(50% - 350px);
+  }
+  
 }
-
+@media only screen and(max-width:650px){
+  .menu-title {
+    width: 650px;
+    padding-left: calc(50% - 325px);
+  }
+}
+@media only screen and(max-width:600px){
+  .menu-title {
+    width: 600px;
+   
+    padding-left: calc(50% - 300px);
+  }
+}
+@media only screen and(max-width:550px){
+  .menu-title {
+    width: 550px;
+    
+    padding-left: calc(50% - 275px);
+  }
+}
+@media only screen and(max-width:500px){
+  .menu-title {
+    padding-top: 115px;
+    width: 500px;
+   font-size: 1.2rem;
+    padding-left: calc(50% - 250px);
+  }
+  .button-label {
+    font-size: 20px;
+    line-height: 2rem;
+    color: orangered;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+  .menu-section{
+    height: calc(100vh - 29rem);
+  }
+  .menu .burger-item {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(17, 15, 15);
+    letter-spacing: -30rem;
+    text-indent: -3rem;
+    transition: 1s cubic-bezier(1, .1, .5, 1.1);
+  }
+}
+@media only screen and(max-width:450px){
+  .menu-title {
+    width: 450px;
+    font-size: 1rem;
+    padding-left: calc(50% - 225px);
+  }
+  .burger-item {
+    text-decoration: none;
+    padding: 5px ;
+    font-size: 1em;
+    position: relative;
+    cursor: pointer;
+  
+  }
  
+}
+@media only screen and(max-width:420px){
+  .menu-title {
+    width: 420px;
+    padding-left: calc(50% - 210px);
+  }
+}
+@media only screen and(max-width:400px){
+  .menu-title {
+    width: 400px;
+  
+    padding-left: calc(50% - 200px);
+  }
+}
+@media only screen and(max-width:350px){
+  .menu-title {
+    width: 350px;
+    font-size: 1rem;
+    padding-left: calc(50% - 175px);
+  }
+}
+@media only screen and(max-width:300px){
+  .menu-title {
+    width: 300px;
+    font-size: 1rem;
+    padding-left: calc(50% - 150px);
+  }
+}
+@media only screen and(max-width:280px){
+  .menu-title {
+    width: 280px;
+    font-size: 0.8rem;
+    padding-left: calc(50% - 140px);
+  }
+}
